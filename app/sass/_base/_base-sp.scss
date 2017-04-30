@@ -1,0 +1,34 @@
+@charset 'utf-8';
+// base-sp
+//////////////////////////////////////
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 62.5%; //10px
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	line-height: 1.5;
+	color: $color-base;
+	font-family: $font-family;
+	@include fz($font-size-base);
+}
+
+a {
+	@include linkColor($color-link);
+}
+
+#l-wrapper {
+	max-width: $width-base;
+	min-width: 320px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#l-wrapper img {
+	display: block;
+	width: 100%;
+	height: auto;
+}

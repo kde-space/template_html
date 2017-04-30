@@ -1,0 +1,21 @@
+.l-widthKeeper {
+	max-width: $width-wide;
+	min-width: $width-small;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	// mediaQuery
+	@include mq-custom-max($width-wide + 40px) {
+		max-width: $width-base;
+	}
+	@include mq-custom-max($width-base + 40px) {
+		max-width: $width-small;
+		padding: 0;
+	}
+}
+
+.l-contents {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: $color-lightGrey;
+}

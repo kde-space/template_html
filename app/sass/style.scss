@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// setting
+@import "_setting/setting";
+// tool
+@import "_tool/mixin";
+@import "_tool/keyframes";
+
+/* //////////////////////////
+* Base
+* ///////////////////////// */
+@import "_base/reset";
+// choice your project type
+@import "_base/base-rw";
+// @import "_base/base-pc";
+// @import "_base/base-sp";
+
+/* //////////////////////////
+* Layout
+* ///////////////////////// */
+@import "_layout/layout";
+
+/* //////////////////////////
+* Module
+* ///////////////////////// */
+@import "_module/noscript";

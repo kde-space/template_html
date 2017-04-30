@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+.u-hide-pc {
+	@include mq-large {
+		display: none !important;
+	}
+}
+.u-hide-base {
+	@include mq-min($width-base + 1) {
+		display: none !important;
+	}
+}
+.u-hide-sp {
+	@include mq-small {
+		display: none !important;
+	}
+}
+
+.u-inlineBlock {
+	display: inline-block !important;
+	*display: inline !important;
+	*zoom: 1 !important;
+}
+
+.u-font-colorStrong {
+	color: $color-strong;
+}
+
+.u-font-bold {
+	font-weight: bold !important;
+}
+.u-font-normal {
+	font-weight: normal !important;
+}
+
+.u-alignLeft {
+	text-align: left !important;
+}
+.u-alignCenter {
+	text-align: center !important;
+}
+.u-alignRight {
+	text-align: right !important;
+}
+.u-alignJustify {
+	text-align: justify !important;
+}
+
+.u-clearfix {
+	*zoom:1;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}

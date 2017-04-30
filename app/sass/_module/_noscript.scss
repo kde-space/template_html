@@ -1,0 +1,12 @@
+noscript div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 110;
+	width: 100%;
+	padding: 50px 0;
+	color: #fff;
+	font-size: 1.6rem;
+	text-align: center;
+	background-color: $color-red;
+}
